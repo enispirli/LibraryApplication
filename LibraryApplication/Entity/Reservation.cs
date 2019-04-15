@@ -13,5 +13,8 @@ namespace Entity
         public int UserId { get; set; }
         public DateTime TakenDate { get; set; }
         public DateTime DeliveryDate { get; set; }
+
+        public virtual Book GetResBook { get; set; }
+        public virtual User GetResUser { get; set; }
     }
 }
